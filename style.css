@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+        /* logo */
+.logo{
+    font-size: 25px;
+    background-image: linear-gradient(aqua,rgb(29, 145, 145),#e3588d,#6b0c77);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.logo:hover{
+    color: rgb(116, 214, 214);
+    cursor: pointer;
+    transition: .3s;
+}
+
+        /* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #faf4f4;
+    /* background-image: linear-gradient(white,#e3588d); */
+    padding: 22px;
+    box-shadow: 0px 5px 5px 5px rgb(193, 170, 170);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+nav ul li i{
+    font-size: 28px;
+    /* padding-right: 25px; */
+    padding-top: 10px;
+}
+nav ul li i:hover{
+    color: rgb(116, 214, 214);
+    cursor: pointer;
+    transition: .3s;
+}
+nav ul li a{
+    padding-right: 45px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: rgb(116, 214, 214);
+    border-bottom: black;
+    transition: .3s;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    /* background-color: aqua; */
+    color: #fff;
+    background-image: linear-gradient(45deg,aqua,#e3588b, #a62355, #6b0c77);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 2px;
+    transition: .5s;
+    box-shadow: 5px 5px 10px 5px rgb(108, 105, 104);
+}
+.btn:hover{
+    cursor: pointer;
+    transition: .5s;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 5px 5px 10px 7px rgb(49, 188, 188);
+}
+
+        /* hero section */
+.hero{
+    width: 100%;
+    min-height: 95vh;
+    
+    background-image: linear-gradient(white, pink, rgb(215, 15, 150));
+    /* background-image: url(trends.jpg); 
+    background-position: center;
+    /* position: relative; */
+    overflow: hidden;
+    /* background-size: cover; */
+}
+.hero .content{
+    margin-top: 9%;
+    max-width: 600px;
+    padding-left: 8%;
+    
+}
+.content h1{
+    font-size: 85px;
+    background-image: linear-gradient(aqua,rgb(29, 145, 145),#e3588d,#6b0c77);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.content h2{
+    font-size: 65px;
+    color: rgb(108, 105, 104);
+}
+.content p{
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.content .btn{
+    padding: 15px 60px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.hero-img{
+    height: 600px;
+    width: 530px;
+    margin-bottom: 55px;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    cursor: pointer;
+}
+.hero-img:hover{
+    box-shadow: 5px 5px 20px 7px rgb(29, 188, 188);
+    transition: .7s;
+    background-size: 120%;
+    
+}
+
+/* .anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: move 0.5s linear forwards;
+}
+@keyframes marker {
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} */
+
+        /* headder */
+.headder a{
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    text-align: center;
+}
+.headder :hover{
+    color: rgb(87, 236, 236);
+    background-color: white;
+}
+
+        /* main page */
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding-top: 60px;
+}
+.main span{
+    color: rgb(10, 187, 187);
+}
+.main h1{
+    color: rgb(108, 105, 104);
+}
+
+.cardwrapper .card .option i:hover{
+    color: rgb(206, 12, 12);
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+.card img:hover{
+    
+    cursor: pointer;
+    transition: .3s;
+}
+.trend .main{
+    height: 50px;
+    width: 100%;
+}
+.cardwrapper{
+    display: flex;
+    justify-content: center;
+
+}
+.cardwrapper .cards .card .option i{
+    display: flex;
+    font-size: 20px;
+    justify-content: end;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+/* .card .option i:hover{
+    color: black;
+    /* background-color: aqua; 
+} */
+.cards{
+    display: flex;
+    justify-content: space-around;
+    height: 675px;
+    width: 350px;
+    /* margin-top: 0px; */
+    align-items: center;
+    border-radius: 35px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: burlywood;
+}
+div .cards{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    margin-top: 0px;
+}
+.cardwrapper img{
+    height: 350px;
+    width: 300px;
+}
+        /* price section */
+.card pre b{
+    color: gray;
+    text-decoration: line-through;
+}
+.card pre .discount{
+    margin-top: 10px;
+    color: rgb(23, 162, 160);
+}
+        /* add to cart & buy now */
+.card button{
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 20px;
+    /* border-radius: 50%; */
+}
+button{
+    cursor: pointer;
+    border-radius: 25px;
+}
+.cart:hover{
+    color: rgb(12, 12, 12);
+    background-color: rgba(228, 198, 24, 0.966);
+    border: 2px solid white;
+    transition: .3s;
+}
+.buy{
+    margin-left: 70px;
+    padding-right: 60px;
+    background-color: rgba(228, 198, 24, 0.966);
+    border: 2px solid white;
+}
+.buy:hover{
+    background-color: #faf4f4;
+    color: black;
+    transition: .3s;
+}
+        /* reating section */
+div .card .reating{
+    color: rgb(54, 126, 10);
+}
+
+
+        /* blog containt */
+.trend_blog{
+    margin-top: 55px;
+    font-size: 25px;
+}
+.full_blog{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.blog_containt{
+    background-color: rgb(206, 176, 136);
+    height: 550px;
+    width: 700px;
+    margin: 15px;
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-around;
+}
+div .img_blog{
+    display: flex;
+    height: 450px;
+    width: 400px;
+    margin-top: 60px;
+    
+}
+div .img_blog:hover{
+    box-shadow: 5px 5px 15px 10px rgb(11, 161, 161);
+    cursor: pointer;
+    transition: .3s;
+}
+div .blogtext{
+    margin-top: 90px;
+    padding-left: 20px;
+    color: rgb(46, 91, 91);
+}
+.blogtext span{
+    color: rgb(43, 145, 145);
+}
+.blogtext button{
+    padding: 15px;
+    margin: 25px;
+    font-size: 25px;
+    border: 5px  solid rgb(39, 170, 170) ;
+    transition: .9s;
+}
+.blogtext button:hover{
+    color: darkslateblue;
+    background-color: aqua;
+    border: 5px rgb(39, 170, 170);
+}
+        /* letter news */
+.latter{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    
+}
+
+/* .latter .enptydiv{
+    background-color: #faf4f4;
+} */
+
+div .latter{
+    background-color: rgb(19, 26, 92);
+}
+.latterNews{
+    color: rgb(191, 180, 180);
+    margin-top: 25px;
+}
+.button{
+    /* background-color: ; */
+    margin-top: 50px;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 20px;
+    border-radius: 0%;
+    margin-left: 0px;
+}
+.button:hover{
+    background-color: aqua;
+    height: 50px;
+    transition: .3s;
+    /* width: 60px; */
+}
+input{
+    background-color: aqua;
+    margin-top: 50px;
+    padding: 10px;
+    width: 400px;
+    /* font-weight: 300; */
+    font-size: 20px;
+}
+input:hover{
+    height: 30px;
+    /* width: 325px; */
+    background-color: white;
+    transition: .3s;
+    
+}
+
+        /* footer */
+.footer{
+    background-color: rgb(20, 28, 27);
+    height: 500px;
+}
+.footer_contant{
+    margin-top: 15px;
+    background-color: rgb(20, 28, 27);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    height: 425px;
+}
+.footerText h2{
+    color: rgb(96, 94, 94);
+}
+.footerText p{
+    color: rgb(167, 159, 159);
+}
+.footer .footerText{
+    justify-content: space-between;
+    
+    height: 310px;
+    /* background-color: #6b0c77; */
+}
+.scanner{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    
+    /* margin-left: 18px; */
+}
+#all_scanner{
+    color: rgb(167, 159, 159);
+    height: 400px;
+    /* background-color: #6b0c77; */
+}
+.footer .creater {
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    
+    color: rgb(158, 152, 152);
+    padding-bottom: 25px;
+    background-color: rgb(20, 28, 27);
+}
